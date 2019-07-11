@@ -36,7 +36,24 @@ public class Mobile {
         this.brand = brand;
     }
 
+    public Mobile(String name, String color, String brand) {
+        this.name = name;
+        this.color = color;
+        this.brand = brand;
+    }
+
     public void call(String message){
         System.out.println("Message : "+message);
     }
+
+    @Override
+    public String toString() {
+        return "Mobile{" +
+                "name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", brand='" + brand + '\'' +
+                '}';
+    }
+
+
 }
