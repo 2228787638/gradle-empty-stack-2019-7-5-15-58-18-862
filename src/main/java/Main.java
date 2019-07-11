@@ -3,12 +3,15 @@ public class Main {
         Mobile mobile= new Mobile("mo","red","hao");
         mobile.call("mobile");
         System.out.println(mobile.toString());
-        Iphone iphone = new Iphone("iphone","blue","jenkins");
+        IPhone iphone = new IPhone("iphone","blue","jenkins");
         iphone.call("iphone");
         Andriod andriod=new Andriod("andriod","black","xiaomi");
         andriod.call("andriod");
 
         Person person =new Person(iphone);
-        person.useMobile("message111111111111111111111111111111");
+        person.useMobile("iphone");
+
+        IPhoneRobot iPhoneRobot =new IPhoneRobot(iphone);
+        iPhoneRobot.useMobile("iPhoneRobot");
     }
 }
